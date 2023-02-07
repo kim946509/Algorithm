@@ -28,9 +28,13 @@ public class java5_7 {
 		
 		graph.get(1).add(new Node(0,7));
 		graph.get(2).add(new Node(0,5));
-		for (int i=0;i<3;i++) {
-			System.out.println(graph.get(i));
-		}
+		
+		for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < graph.get(i).size(); j++) {
+                graph.get(i).get(j).show();
+            }
+            System.out.println();
+        }
 	}
 
 }
